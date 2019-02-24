@@ -1,4 +1,4 @@
-# Spectacle Boilerplate
+# Spectacle Boilerplate TypeScript
 
 ## Contents
 
@@ -16,7 +16,7 @@ The Spectacle core API is available in the [Spectacle Docs](https://github.com/F
 1. Download the boilerplate
 
    ```sh
-   git clone git@github.com:FormidableLabs/spectacle-boilerplate.git
+   git clone git@github.com:niieani/spectacle-boilerplate-typescript.git
    ```
 
 2. Remove existing version control
@@ -31,7 +31,7 @@ The Spectacle core API is available in the [Spectacle Docs](https://github.com/F
    yarn install
    ```
 
-4. Start the webpack server. The server will run at [`localhost:3000`](http://localhost:3000).
+4. Start the webpack server. The server will run at [`localhost:55555`](http://localhost:55555).
 
    ```sh
    yarn start
