@@ -1,11 +1,11 @@
 {
   "presets": [
+    "@babel/preset-typescript",
     "@babel/preset-env",
     "@babel/preset-react"
   ],
   "plugins": [
-    "react-hot-loader/babel",
-    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+    "react-hot-loader/babel"
   ],
   "env": {
     "production": {
@@ -14,8 +14,7 @@
         "transform-react-remove-prop-types",
         "@babel/plugin-transform-react-constant-elements",
         "@babel/plugin-transform-react-inline-elements",
-        "@babel/plugin-transform-runtime",
-        ["@babel/plugin-proposal-decorators", { "legacy": true }]
+        "@babel/plugin-transform-runtime"
       ]
     },
     "test": {

@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import { Heading } from 'spectacle';
+import React from 'react'
+import {Heading} from 'spectacle'
 
-export default class Interactive extends Component {
-  constructor() {
-    super();
+export default class Interactive extends React.Component<{}, {count: number}> {
+  constructor(props: Readonly<{}>) {
+    super(props)
     this.state = {
-      count: 0
-    };
-    this.handleClick = this.handleClick.bind(this);
+      count: 0,
+    }
+    this.handleClick = this.handleClick.bind(this)
   }
   handleClick() {
     this.setState({
-      count: this.state.count + 1
-    });
+      count: this.state.count + 1,
+    })
   }
   render() {
     const styles = {
@@ -20,13 +20,13 @@ export default class Interactive extends Component {
       background: 'black',
       minWidth: 300,
       marginTop: 20,
-      textTransform: 'uppercase',
+      textTransform: 'uppercase' as 'uppercase',
       border: 'none',
       color: 'white',
       outline: 'none',
-      fontWeight: 'bold',
-      fontSize: '2em'
-    };
+      fontWeight: 'bold' as 'bold',
+      fontSize: '2em',
+    }
     return (
       <div>
         {this.state.count < 5 ? (
@@ -44,6 +44,6 @@ export default class Interactive extends Component {
           </Heading>
         )}
       </div>
-    );
+    )
   }
 }
